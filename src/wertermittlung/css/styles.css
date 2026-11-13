@@ -64,6 +64,7 @@ SOFTWARE.
   color: var(--wm-text);
   font-family: var(--wm-font);
   font-size: 1rem;
+  font-variant-numeric: lining-nums;
   line-height: 1.5;
   text-align: left;
   -webkit-text-size-adjust: 100%;
@@ -360,6 +361,36 @@ SOFTWARE.
   font-weight: 600;
 }
 
+.esdi-wm .wm-label--range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.625rem;
+}
+
+.esdi-wm .wm-range-badge {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--wm-gold);
+  border-radius: 999px;
+  background: var(--wm-white);
+  box-shadow: 0 2px 6px rgba(20, 27, 35, 0.06);
+  color: var(--wm-navy);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.esdi-wm .wm-range-value {
+  color: var(--wm-navy);
+  font-weight: 800;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
 .esdi-wm .wm-label__opt {
   color: var(--wm-muted);
   font-weight: 500;
@@ -638,16 +669,12 @@ SOFTWARE.
   outline-offset: 4px;
 }
 
-.esdi-wm .wm-range-value {
-  color: var(--wm-gold);
-  font-variant-numeric: tabular-nums;
-}
-
 .esdi-wm .wm-range-limits {
   display: flex;
   justify-content: space-between;
   color: var(--wm-muted);
   font-size: 0.75rem;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .esdi-wm .wm-choice {

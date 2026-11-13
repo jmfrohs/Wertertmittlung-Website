@@ -74,7 +74,7 @@ SOFTWARE.
       return;
     }
     var type = form.elements.propertyType.value;
-    livingLabel.textContent = type === 'plot-of-land' ? 'Grundstücksfläche (m²)' : 'Wohnfläche (m²)';
+    livingLabel.textContent = type === 'plot-of-land' ? 'Grundstücksfläche' : 'Wohnfläche';
   }
 
   function collectData(form, addressInput) {

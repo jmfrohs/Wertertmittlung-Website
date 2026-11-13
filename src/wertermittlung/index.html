@@ -526,8 +526,10 @@ SOFTWARE.
               <legend class="wm-step__title" tabindex="-1">Eckdaten Ihrer Immobilie</legend>
               <div class="wm-grid wm-grid--full wm-fields">
                 <label class="wm-field">
-                  <span class="wm-label"><span data-wm-living-label>Fläche der Immobilie (m²)</span>* <output
-                      class="wm-range-value" data-wm-area-output aria-live="polite">120</output> m²</span>
+                  <span class="wm-label wm-label--range">
+                    <span><span data-wm-living-label>Fläche der Immobilie</span>*</span>
+                    <span class="wm-range-badge"><output class="wm-range-value" data-wm-area-output aria-live="polite">120</output>&nbsp;m²</span>
+                  </span>
                   <input class="wm-range" type="range" name="livingArea" min="10" max="10000" step="10" value="120"
                     data-wm-validate="living" />
                   <span class="wm-range-limits" aria-hidden="true"><span>10 m²</span><span>10.000 m²</span></span>
@@ -943,8 +945,6 @@ SOFTWARE.
   <script src="js/utils/validation.js" defer></script>
   <script src="js/services/address-service.js" defer></script>
   <script src="js/services/export-service.js" defer></script>
-  <!-- Test-CSV-Export (später aus Sicherheitsgründen entfernen) -->
-  <script src="js/services/testexport-csv.js" defer></script>
   <script src="js/core/stepper.js" defer></script>
   <script src="js/pages/index.js" defer></script>
 </body>
