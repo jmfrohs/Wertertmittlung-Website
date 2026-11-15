@@ -137,6 +137,13 @@ SOFTWARE.
         firstInvalid.focus();
         return false;
       }
+      var consentInput = form.elements.privacyConsent;
+      if (consentInput && !consentInput.checked) {
+        dom.markInvalid(consentInput, true);
+        dom.setError(step, 'Bitte akzeptieren Sie die Datenschutzerklärung.');
+        consentInput.focus();
+        return false;
+      }
     }
 
     return true;

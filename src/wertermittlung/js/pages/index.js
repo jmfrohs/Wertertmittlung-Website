@@ -151,6 +151,13 @@ SOFTWARE.
         addressController.resetAutoLocationFlag();
         return;
       }
+      if (event.target.name === 'privacyConsent') {
+        dom.markInvalid(event.target, !event.target.checked);
+        if (event.target.checked) {
+          dom.setError(steps[5], '');
+        }
+        return;
+      }
       if (event.target.name !== 'propertyType') {
         return;
       }

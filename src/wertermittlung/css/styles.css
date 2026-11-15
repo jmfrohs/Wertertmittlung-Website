@@ -550,6 +550,19 @@ SOFTWARE.
   accent-color: var(--wm-navy);
 }
 
+.esdi-wm .wm-consent a {
+  color: var(--wm-navy);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: color 0.2s;
+}
+
+.esdi-wm .wm-consent a:hover,
+.esdi-wm .wm-consent a:focus-visible {
+  color: var(--wm-gold-ink);
+}
+
 .esdi-wm .wm-input {
   display: block;
   width: 100%;
